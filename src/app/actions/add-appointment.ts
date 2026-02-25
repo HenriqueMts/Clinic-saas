@@ -53,6 +53,7 @@ export const addAppointment = actionClient
       doctorId,
       date: appointmentDate,
       clinicId: doctor.clinicId,
+      appointmentPriceInCents: doctor.appointmentPriceInCents,
       createdAt: new Date(),
       updatedAt: new Date(),
     });

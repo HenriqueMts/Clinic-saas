@@ -48,16 +48,8 @@ const DashboardPage = async ({ searchParams }: DashboardPageProps) => {
       `/dashboard?from=${dayjs().format("YYYY-MM-DD")}&to=${dayjs().add(1, "month").format("YYYY-MM-DD")}`,
     );
   }
-  const {
-    totalRevenue,
-    totalAppointments,
-    totalPatients,
-    totalDoctors,
-    topDoctors,
-    topSpecialties,
-    todayAppointments,
-    dailyAppointmentsData,
-  } = await getDashboard({
+  const { topDoctors, topSpecialties, todayAppointments, dailyAppointmentsData } =
+    await getDashboard({
     from,
     to,
     session: {

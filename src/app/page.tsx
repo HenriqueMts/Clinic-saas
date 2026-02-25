@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
+import { Hero } from "./_components/hero/hero";
 
 export default function Home() {
-  return <Button>Bootcamp!</Button>;
+  return <Hero />;
 }
